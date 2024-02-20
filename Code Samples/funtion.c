@@ -1,6 +1,6 @@
 #include <stdio.h>
 int evenodd(int); //FUNCTION DECLARATION
-int main(){
+int main(void){
     int num, flag;
     printf("\n Enter the number : ");
     scanf("%d", &num);
