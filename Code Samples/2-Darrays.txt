@@ -1,0 +1,45 @@
+Declaration:
+datatype arrayName[row_size][column_size];
+int matrix[3][3]; // Declares a 3x3 integer matrix
+Initialization:
+int matrix[3][3] = {1,2,3,4,5,6,7,8,9}
+int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+Access elements
+int element =  arr[1]
+int element = matrix[row_index][column_index];
+parsing to fns
+void myFunction(int arr[][3], int rows, int cols) {
+    // Function body
+}
+ Ops on 2-d arrays:
+ Transpose
+ transpose(int matrix[n][m])= int matrixnew[m][n];
+ int transpose[3][3];
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        transpose[j][i] = matrix[i][j];
+    }
+}
+sum and difference
+int sum[3][3];
+int difference[3][3];
+
+// Assuming matrix1 and matrix2 are the matrices to be added/subtracted
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        sum[i][j] = matrix1[i][j] + matrix2[i][j];
+        difference[i][j] = matrix1[i][j] - matrix2[i][j];
+    }
+}
+product
+int product[3][3];
+
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        product[i][j] = 0;
+        for (int k = 0; k < 3; k++) {
+            product[i][j] += matrix1[i][k] * matrix2[k][j];
+        }
+    }
+}
+

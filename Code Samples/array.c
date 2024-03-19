@@ -17,6 +17,7 @@ int main() {
     printf("Element 2: %d\n", numbers[2]);
     printf("Element 3: %d\n", numbers[3]);
     printf("Element 4: %d\n", numbers[4]);
-
+    numbers[4] = 100;
+    printf("Element 4: %d\n", numbers[4]);
     return 0;
 }
