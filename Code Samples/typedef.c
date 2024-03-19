@@ -2,10 +2,10 @@
 #include <math.h>
 
 // Define a struct representing a point in 2D space
-struct Point {
+typedef struct Point{
     int x;
     int y;
-}p3 = {10,14}, p4={4,8};
+}Point;
 
 // Function to display the coordinates of a point
 void displayPoint(struct Point p) {
@@ -13,16 +13,18 @@ void displayPoint(struct Point p) {
 }
 
 // Function to calculate the distance between two points
-double distance(struct Point p1, struct Point p2) {
-    int dx = p2.x - p1.x;
-    int dy = p2.y - p1.y;
+double distance(struct Point p3, struct Point p4) {
+    int dx = p3.x - p4.x;
+    int dy = p4.y - p4.y;
     return sqrt(dx*dx + dy*dy);
 }
 
 int main() {
     // Declare and initialize struct variables
-    struct Point p1 = {2, 3};
-    struct Point p2 = {5, 7};
+    Point p1 = {2, 3};
+    Point p2 = {5, 7};
+    Point p3 = {8,10};
+    Point p4 = {12,14};
 
     // Display the coordinates of points
     printf("Coordinates of p1:\n");
